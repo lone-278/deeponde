@@ -1,0 +1,10 @@
+
+/* ------------------첫번째 섹션------------------------ */
+
+.inner {position: relative;}
+.menu-bar {
+  width: 100%; height: 90px; top: 0; left: 0; position: absolute;
+  display: flex; justify-content: space-between;
+}
+.menu {width: 100px; text-align: left;}
+.logo {}
