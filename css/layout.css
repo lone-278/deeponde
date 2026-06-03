@@ -29,10 +29,14 @@
 
 /* ------------------세번째 섹션------------------------------- */
 
-.inner3 {padding: 120px 0; display: flex;}
-.img-sec-box {width: 815px; height: 1085px;}
+.inner3 {padding: 120px 0; display: flex; align-items: flex-end;}
+.img-sec-box {width: 815px; height: 1085px; flex-shrink: 0;}
+.pro-sec-box {
+ flex: 1; min-width: 0;
+}
 .pro-sec-text {
-  padding: 0 100px; margin-bottom: 80px; display: flex; flex-direction: column;
-  
+ padding-left: 100px; margin-bottom: 80px; display: flex; flex-direction: column;
 }
 .view-com {text-decoration: underline; text-underline-offset: 10px;}
+
+.product {margin-top: 40px;}
