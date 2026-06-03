@@ -29,7 +29,10 @@
 
 /* ------------------세번째 섹션------------------------------- */
 
-.inner3 {padding: 120px 0;}
-.img-sec-box {
-  width: 815px; height: 1085px;
+.inner3 {padding: 120px 0; display: flex;}
+.img-sec-box {width: 815px; height: 1085px;}
+.pro-sec-text {
+  padding: 0 100px; margin-bottom: 80px; display: flex; flex-direction: column;
+  
 }
+.view-com {text-decoration: underline; text-underline-offset: 10px;}
