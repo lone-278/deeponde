@@ -1,0 +1,17 @@
+/* 메뉴아이콘 */
+/* <span class="menu-icon material-symbols-outlined">dehaze</span> */
+.menu-icon.material-symbols-outlined {
+  color: #615E4D; font-size: 36px; cursor: pointer;
+}
+
+/* 로그인아이콘 */
+/* <span class="login-icon material-symbols-outlined">person</span> */
+.login-icon.material-symbols-outlined{
+  color: #615E4D; font-size: 36px; cursor: pointer;
+}
+
+/* 장바구니아이콘 */
+/* <span class="cart-icon material-symbols-outlined">shopping_cart</span> */
+.cart-icon.material-symbols-outlined {
+  color: #615E4D; font-size: 32px; cursor: pointer;
+}
