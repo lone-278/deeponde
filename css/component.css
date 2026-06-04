@@ -27,3 +27,9 @@
 .next-b.material-symbols-outlined {
   color: #88ADA5; font-size: 33px; cursor: pointer;
 }
+
+/* 더보기 버튼 */
+/* <a href="#"><span class="view-com fs-16 fw-400">View More</span></a> */
+.view-com {
+  text-decoration: underline; text-underline-offset: 10px;
+}

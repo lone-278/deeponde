@@ -37,6 +37,25 @@
 .pro-sec-text {
  padding-left: 100px; margin-bottom: 80px; display: flex; flex-direction: column;
 }
-.view-com {text-decoration: underline; text-underline-offset: 10px;}
-
 .product {margin-top: 40px;}
+
+/* ------------------------네번째 섹션------------------------- */
+
+.inner4 {padding: 120px 0; display: flex; flex-direction: column; align-items: center;}
+.brand-story {
+  width: 415px; height: 550px; position: relative; overflow: hidden;
+}
+.brand-story>p {
+  position: absolute; top: 40px; left: 50%; transform: translate(-50%); z-index: 1;
+  white-space: nowrap;
+}
+.brand-story>span {
+  position: absolute; bottom: 40px; left: 50%; transform: translate(-50%); z-index: 1;
+}
+.brand-story>img,
+.brand-story>p,
+.brand-story>span {transition: 0.6s;}
+.inner4>a:hover .brand-story>img {
+  transform: scale(1.05);
+}
+
