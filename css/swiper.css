@@ -130,6 +130,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 .swiper-navigation-icon {display: none;}
 .swiper-button-next1 {right:-70px !important;}
