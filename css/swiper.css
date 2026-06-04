@@ -118,7 +118,8 @@
   background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1));
 } */
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next1, .swiper-button-prev1,
+.swiper-button-next2, .swiper-button-prev2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -131,12 +132,18 @@
   justify-content: center;
 }
 .swiper-navigation-icon {display: none;}
-.swiper-button-next {right:-70px !important;}
-.swiper-button-prev {left: -70px !important;}
+.swiper-button-next1 {right:-70px !important;}
+.swiper-button-prev1 {left: -70px !important;}
+.swiper-button-next2 {right:-100px !important;}
+.swiper-button-prev2 {left: -100px !important;}
 
-.swiper-box {
+.swiper-box1{
   position: relative;
   width: 900px; margin: 0 auto; overflow: visible;
+}
+.swiper-box2{
+  position: relative;
+  width: 1480px; margin: 0 auto; overflow: visible;
 }
 .swiper {
   position: relative;
@@ -158,7 +165,5 @@
   height: 100%;
   position: relative;
   transition-property: transform;
-  display: block;
+  display: block; object-fit: cover;
 }
-
-/* .swiper-slide {width: 440px;} */

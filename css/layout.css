@@ -59,3 +59,15 @@
   transform: scale(1.05);
 }
 
+/* -------------------다섯번째 섹션------------------------------ */
+
+.inner5 {padding: 120px 0; background-color: #F9F6F2;}
+.inner5>p {text-align: center;}
+
+/* ----------------------여섯번째 섹션----------------------------- */
+
+.section6 {padding: 120px 160px; width: 100%;}
+.inner6 {width: 1600px; margin: 0 auto;}
+.inner6 figure {margin: 0;}
+.top-insta-box {display: flex; align-items: start; gap: 20px; margin-bottom: 20px;}
+.bottom-insta-box {display: flex; justify-content: end; gap: 20px; width: 100%;}
