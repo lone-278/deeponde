@@ -16,4 +16,18 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev2",
     }
   });
+
+  var swiper = new Swiper(".main-swiper", {
+    loop: true,
+    centeredSlides: true,
+    speed: 1200,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 })
