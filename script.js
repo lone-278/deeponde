@@ -30,4 +30,19 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+  
+  $(".menu").click(function (e){
+    e.preventDefault()
+    $(".menu-bg").fadeIn(300);
+    $(".overlay").fadeIn(300);
+    $(this).css("visibility","hidden");
+    $("body").css("overflow", "hidden");
+  })
+  $(".overlay").on('click',function (e){
+    e.preventDefault()
+    $(".menu-bg").fadeOut(300);
+    $(this).fadeOut(300);
+    $(".menu").css("visibility","visible");
+    $("body").css("overflow", "auto");
+  });
 })

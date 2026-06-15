@@ -3,15 +3,36 @@
 
 .inner1 {position: relative;}
 .menu-bar {
-  width: 100%; height: 90px; top: 0; left: 0; position: absolute;
+  width: 100%; height: 90px; top: 0; left: 0; position: fixed;
   display: flex; justify-content: space-between; align-items: center;
-  background-color: rgba(255, 255, 255, 0.5); padding: 0 40px; z-index: 99;
+  background-color: rgba(255, 255, 255, 0.5); padding: 0 40px; z-index: 98;
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 .menu-bar a {display: block; width: fit-content;}
 .menu {width: 100px; text-align: left;}
 .logo img {width: 226px; height: 54px;}
 .icon {
   width: 100px; display: flex; justify-content: space-between; align-items: center;
+}
+
+.menu-bg {
+  position: fixed; z-index: 100; background-color: rgba(255, 255, 255, 0.5);
+  width: 598px; height: calc(100vh - 90px); padding: 80px 0 0 160px; top: 90px;
+  display: none; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+}
+.menu-bg a {display: block;}
+.component {display: flex; align-items: center; gap: 10px; margin-bottom: 40px;}
+.component>span {
+  color: #5DA3AF !important; font-size: 24px !important; transition: 0.5s;
+}
+.component:hover span {margin-left: 4px;}
+.menu-bg ul li {margin-bottom: 10px; width: fit-content;}
+.menu-bg ul li a {transition: 0.3s; display: block;}
+.menu-bg ul:has(li a:hover) li a {color: #BEBAAE;}
+.menu-bg ul:has(li a:hover) li a:hover {color: #333333;}
+.overlay {
+  position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);
+  z-index: 99; display: none; top: 0; left: 0;
 }
 
 /* --------------------두번째 섹션------------------------ */
@@ -36,6 +57,9 @@
 .pro-sec-text {
  padding-left: 100px; margin-bottom: 80px; display: flex; flex-direction: column;
 }
+.pro-sec-text>a {display: block; width: fit-content;}
+.pro-sec-text>a span {transition: 0.3s;}
+.pro-sec-text>a:hover span {color: #88ADA5;}
 .product {margin-top: 40px;}
 
 /* ------------------------네번째 섹션------------------------- */
