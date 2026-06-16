@@ -45,7 +45,10 @@
   justify-content: center; 
 }
 .top-text-box {text-align: left;}
-.bottom-text-box {text-align: right; padding-right: 135px; margin-top: 120px;}
+.bottom-text-box {
+  text-align: left; padding-right: 135px; margin-top: 120px;
+  padding-right: 135px; margin-left: auto;
+}
 
 /* ------------------세번째 섹션------------------------------- */
 

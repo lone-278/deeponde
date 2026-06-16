@@ -138,6 +138,8 @@
   --swiper-theme-color: #5DA3AF !important;
 }
 
+/* ------------------------------------------------ */
+
 .swiper-button-next1, .swiper-button-prev1,
 .swiper-button-next2, .swiper-button-prev2 {
   position: absolute;
@@ -154,13 +156,14 @@
 }
 .swiper-navigation-icon {display: none;}
 .swiper-button-next1 {right:-70px !important;}
-.swiper-button-prev1 {left: -70px !important;}
+.swiper-button-prev1 {left: 30px !important;}
 .swiper-button-next2 {right:-100px !important;}
 .swiper-button-prev2 {left: -100px !important;}
 
 .swiper-box1{
   position: relative;
-  width: 900px; margin: 0 auto; overflow: visible;
+  width: 1000px; margin-left: 0; margin-right: auto; overflow: visible;
+  padding-left: 100px;
 }
 .swiper-box2{
   position: relative;
