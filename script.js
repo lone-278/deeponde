@@ -8,12 +8,22 @@ $(document).ready(function () {
     }
   });
 
-    var swiper = new Swiper(".type-2", {
-    slidesPerView: 3,
+  var swiper = new Swiper(".type-2", {
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1081: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
     }
   });
 

@@ -52,13 +52,17 @@
 
 /* ------------------세번째 섹션------------------------------- */
 
-.inner3 {padding: 120px 0; display: flex; align-items: flex-end;}
-.img-sec-box {width: 815px; height: 1085px; flex-shrink: 0;}
-.pro-sec-box {
- flex: 1;
+.inner3 {padding: clamp(80px, 7vw, 120px) 0; display: flex; align-items: flex-end;}
+.img-sec-box {
+  flex: 1 1 0; max-width: 815px;
 }
+.img-sec-box img {width: 100%; height: auto;}
+.pro-sec-box {
+  flex: 1; padding-left: clamp(40px,5vw,100px);  min-width: 0;
+}
+.pro-sec-box p {word-break: keep-all; overflow-wrap: break-word;}
 .pro-sec-text {
- padding-left: 100px; margin-bottom: 80px; display: flex; flex-direction: column;
+  margin-bottom: 80px; display: flex; flex-direction: column;
 }
 .pro-sec-text>a {display: block; width: fit-content;}
 .pro-sec-text>a span {transition: 0.3s;}
@@ -89,6 +93,7 @@
 
 .inner5 {padding: 120px 0; background-color: #F9F6F2;}
 .inner5>p {text-align: center;}
+.swiper-box2 p {word-break: keep-all; overflow-wrap: break-word;}
 
 /* ----------------------여섯번째 섹션----------------------------- */
 
@@ -103,7 +108,7 @@
 .inner6 img {width: 100%; object-fit: cover; aspect-ratio: 1 / 1;}
 .inner6 a {display: block; overflow: hidden;}
 .inner6 a:hover img {transform: scale(1.05);}
-.inner6 img {transition: 0.6s; }
+.inner6 img {transition: 0.6s;}
 
 /* --------------------------푸터------------------------------------ */
 

@@ -140,11 +140,10 @@
 
 /* ------------------------------------------------ */
 
-.swiper-button-next1, .swiper-button-prev1,
 .swiper-button-next2, .swiper-button-prev2 {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); 
   width: 40px;
   height: 40px;
   z-index: 10;
@@ -155,19 +154,29 @@
   user-select: none;
 }
 .swiper-navigation-icon {display: none;}
-.swiper-button-next1 {right:-70px !important;}
-.swiper-button-prev1 {left: 30px !important;}
-.swiper-button-next2 {right:-100px !important;}
-.swiper-button-prev2 {left: -100px !important;}
+.nav-box {
+  position: absolute; display: flex; top: -60px; right: 0; gap: 4px;
+}
+.swiper-button-next1, .swiper-button-prev1 {
+  width: auto;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.swiper-button-next2 {right: 0 !important;}
+.swiper-button-prev2 {left: 0 !important;}
 
 .swiper-box1{
-  position: relative;
-  width: 1000px; margin-left: 0; margin-right: auto; overflow: visible;
-  padding-left: 100px;
+  position: relative; width: 100%;
+  max-width: 900px; margin-left: 0; margin-right: auto;
 }
 .swiper-box2{
-  position: relative;
-  width: 1480px; margin: 0 auto; overflow: visible;
+  position: relative; min-width: 0; padding: 0 clamp(32px, 8.3vw, 160px);
+  width: 100%; max-width: 1480px; margin: 0 auto;
 }
 .swiper {
   position: relative;
@@ -190,4 +199,8 @@
   position: relative;
   transition-property: transform;
   display: block; object-fit: cover;
+}
+.swiper-box1 .swiper-slide img, 
+.swiper-box2 .swiper-slide img {
+  width:100%; height:auto;
 }
