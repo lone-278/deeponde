@@ -97,14 +97,17 @@
 
 /* ----------------------여섯번째 섹션----------------------------- */
 
-.section6 {padding: 120px 160px; width: 100%;}
+.section6 {padding: 120px clamp(20px, 8vw, 160px); width: 100%;}
 .inner6 {
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 20px; width: 100%; margin: 0 auto;
 }
 .inner6>* {margin: 0;}
-.inner6>p {grid-column: span 2;}
-.inner6>.insta3 {grid-column-start: 2;}
+.inner6 .insta3 {
+  grid-column: span 2; font-size: clamp(20px, 2.2vw, 40px);
+  overflow-wrap: break-word;
+}
+.inner6 .insta4 {grid-column-start: 2;}
 .inner6 img {width: 100%; object-fit: cover; aspect-ratio: 1 / 1;}
 .inner6 a {display: block; overflow: hidden;}
 .inner6 a:hover img {transform: scale(1.05);}

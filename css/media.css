@@ -27,6 +27,7 @@
 
   .section6 {padding: 120px 20px;}
   .inner6 {grid-template-columns: repeat(3, 1fr);}
-  .inner6>.insta3 {grid-column: 1;}
-  .inner6>p {font-size: 36px;}
+  .inner6 .insta4 {grid-column: 1;}
+  .inner6 .insta3 {font-size: 36px;}
 }
+
