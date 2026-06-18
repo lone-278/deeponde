@@ -17,7 +17,7 @@
 
 .menu-bg {
   position: fixed; z-index: 100; background-color: rgba(255, 255, 255, 0.5);
-  width: 598px; height: calc(100vh - 90px); padding: 80px 0 0 160px; top: 90px;
+  width: 598px; height: calc(100vh - 90px); padding: 80px 0 0 clamp(100px, 8vw, 160px);; top: 90px;
   display: none; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 .menu-bg a {display: block;}
@@ -47,8 +47,9 @@
 .top-text-box {text-align: left;}
 .bottom-text-box {
   text-align: left; padding-right: 135px; margin-top: 120px;
-  padding-right: 135px; margin-left: auto;
+  margin-left: auto;
 }
+.bottom-text-box p {word-break: keep-all; overflow-wrap: break-word;}
 
 /* ------------------세번째 섹션------------------------------- */
 
@@ -71,13 +72,15 @@
 
 /* ------------------------네번째 섹션------------------------- */
 
-.inner4 {padding: 120px 0; display: flex; flex-direction: column; align-items: center;}
+.inner4 {padding: 120px clamp(20px, 8vw, 160px); display: flex; flex-direction: column; align-items: center;}
+.inner4 p {word-break: keep-all; overflow-wrap: break-word; text-align: center;}
+.inner4>p:first-child {font-size: clamp(80px, 6vw, 120px);}
 .brand-story {
   width: 415px; height: 550px; position: relative; overflow: hidden;
 }
 .brand-story>p {
   position: absolute; top: 40px; left: 50%; transform: translate(-50%); z-index: 1;
-  white-space: nowrap;
+  white-space: nowrap; font-size: clamp(32px, 2.2vw, 40px);
 }
 .brand-story>span {
   position: absolute; bottom: 40px; left: 50%; transform: translate(-50%); z-index: 1;

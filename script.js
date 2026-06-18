@@ -1,10 +1,16 @@
 $(document).ready(function () {
   var swiper = new Swiper(".type-1", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next1",
       prevEl: ".swiper-button-prev1",
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
     }
   });
 
