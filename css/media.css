@@ -4,7 +4,9 @@
   .menu-bg {padding-left: 108px; width: 444px;}
 
   .inner2 {height: fit-content; padding: 120px 20px;}
-  .bottom-text-box {margin-top: 80px; padding-right: 0; width: clamp(380px, 40vw, 650px);}
+  .bottom-text-box {
+    margin-top: 80px; padding-right: 0; width: clamp(300px, 40vw, 655px);
+  }
   .bottom-text-box br {display: none;}
 
   .inner3 {padding: 120px 20px; display: flex; align-items: center;
@@ -15,7 +17,9 @@
     background: url(../image/bg-2.png) center/cover no-repeat;
     opacity: 0.25; z-index: 1;
   }
-  .pro-sec-box {position: relative; z-index: 2; flex: none; width: 100%;}
+  .pro-sec-box {
+    position: relative; z-index: 2; flex: none; width: 100%; padding-left: 0;
+  }
   .pro-sec-text {padding-left: 0; width: 100%; text-align: left;}
   .img-sec-box {display: none;}
   .swiper-box1 {padding-left: 0; margin: 0 auto;}
@@ -30,7 +34,7 @@
   .section6 {padding: 120px 20px;}
   .inner6 {grid-template-columns: repeat(3, 1fr);}
   .inner6 .insta4 {grid-column: 1;}
-  .inner6 .insta3 {font-size: 36px;}
+  .inner6 .insta3 {font-size: clamp(20px, 3vw, 36px);}
 }
 
 @media screen and (max-width: 768px) {
@@ -53,7 +57,7 @@
   .inner4 {padding: 100px 20px;}
   .inner4 br {display: none;}
   .inner4>p:first-child {font-size: 80px; margin-bottom: 40px;}
-  .inner4>p:nth-child(2) {font-size: 20px;}
+  .inner4>p:nth-child(2) {font-size: 20px; margin-bottom: 8px;}
   .inner4>p:nth-child(3) {font-size: 15px; margin-bottom: 80px;}
   .brand-story { width: 354px; height: 470px;}
   .brand-story>p {font-size: 32px;}
@@ -73,5 +77,43 @@
 }
 
 @media screen and (max-width: 420px) {
-  
+  .menu-bar {height: 80px; padding: 0 20px;}
+  .icon {display: none;}
+  .logo {order: 1;}
+  .logo img {width: 132px; height: 32px;}
+  .menu {order: 2; width: fit-content;}
+
+  .inner2 {padding: 50px 20px;}
+  .top-text-box>p:first-child {font-size: 14px;}
+  .top-text-box>p:last-child {font-size: 20px;}
+  .bottom-text-box {margin-top: 40px;}
+  .bottom-text-box p {font-size: 14px; line-height: 1.7;}
+
+  .inner3 {padding: 50px 20px;}
+  .pro-sec-text>p:first-child {font-size: 20px;}
+  .pro-sec-text>p:nth-child(3) {
+    font-size: 14px; margin-bottom: 20px; line-height: 1.7;
+  }
+  .pro-sec-box {padding-bottom: 0;}
+  .swiper-box1 {max-width: 280px;}
+  .view-com {font-size: 14px;}
+
+  .inner4 {padding: 50px 20px;}
+  .inner4>a {width:100%; max-width:380px;}
+  .inner4>p {width: 100%; text-align: left;}
+  .inner4>p:first-child {font-size: 48px; margin-bottom: 20px;}
+  .inner4>p:nth-child(2) {font-size: 16px;}
+  .inner4>p:nth-child(3) {font-size: 14px; margin-bottom: 40px; line-height: 1.7;}
+  .brand-story { width: 100%; aspect-ratio:415/550;}
+
+  .inner5 {padding: 50px 20px;}
+  .inner5>p {font-size: 35px; margin-bottom: 40px;}
+  .swiper-box2 {max-width: 280px;}
+
+  .section6 {padding: 50px 20px;}
+  .inner6 .insta3 {font-size: 20px;}
+
+  footer {padding: 50px 20px;}
+  footer>img {margin: 0 0 20px 0; width: 248px; height: 61px;}
+  .link-box {gap: 20px;}
 }

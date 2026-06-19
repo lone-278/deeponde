@@ -72,18 +72,25 @@
 
 /* ------------------------네번째 섹션------------------------- */
 
-.inner4 {padding: 120px clamp(20px, 8vw, 160px); display: flex; flex-direction: column; align-items: center;}
+.inner4 {
+  padding: 120px clamp(20px, 8vw, 160px); display: flex; flex-direction: column; 
+  align-items: center;
+}
 .inner4 p {word-break: keep-all; overflow-wrap: break-word; text-align: center;}
 .inner4>p:first-child {font-size: clamp(80px, 6vw, 120px);}
 .brand-story {
   width: 415px; height: 550px; position: relative; overflow: hidden;
+}
+.brand-story img{
+  width:100%; height:100%; object-fit:cover;
 }
 .brand-story>p {
   position: absolute; top: 40px; left: 50%; transform: translate(-50%); z-index: 1;
   white-space: nowrap; font-size: clamp(32px, 2.2vw, 40px);
 }
 .brand-story>span {
-  position: absolute; bottom: 40px; left: 50%; transform: translate(-50%); z-index: 1;
+  position: absolute; bottom: 40px; left: 50%; transform: translate(-50%); 
+  z-index: 1;
 }
 .brand-story>img,
 .brand-story>p,
@@ -107,11 +114,11 @@
 }
 .inner6>* {margin: 0;}
 .inner6 .insta3 {
-  grid-column: span 2; font-size: clamp(20px, 2.2vw, 40px);
+  grid-column: span 2; font-size: clamp(36px, 2.2vw, 40px);
   overflow-wrap: break-word;
 }
 .inner6 .insta4 {grid-column-start: 2;}
-.inner6 img {width: 100%; object-fit: cover; aspect-ratio: 1 / 1;}
+.inner6 img {width: 100%; object-fit: cover; aspect-ratio: 1 / 1; display: block;}
 .inner6 a {display: block; overflow: hidden;}
 .inner6 a:hover img {transform: scale(1.05);}
 .inner6 img {transition: 0.6s;}
@@ -127,3 +134,8 @@ footer>img {
   object-fit: cover;
 }
 .copy {text-align: center;}
+.link-box {
+  display: flex; gap: 20px 40px; margin-top: 40px; flex-wrap: wrap; 
+  justify-content: center;
+}
+.link-box a {display: block;}
