@@ -1,4 +1,12 @@
 
+.no-touch {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-touch-callout: none;
+}
+
 /* ------------------첫번째 섹션------------------------ */
 
 .inner1 {position: relative;}
