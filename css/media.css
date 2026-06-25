@@ -78,6 +78,7 @@
 
 @media screen and (max-width: 420px) {
   .menu-bar {height: 80px; padding: 0 20px;}
+  .menu-bg {padding-left: 70px; width: 268px; height: calc(100vh - 80px); top: 80px;}
   .icon {display: none;}
   .logo {order: 1;}
   .logo img {width: 132px; height: 32px;}
@@ -111,9 +112,10 @@
   .swiper-box2 {max-width: 280px;}
 
   .section6 {padding: 50px 20px;}
-  .inner6 .insta3 {font-size: 20px;}
+  .inner6 .insta3 {font-size: clamp(14px, 4.76vw, 20px);}
 
   footer {padding: 50px 20px;}
   footer>img {margin: 0 0 20px 0; width: 248px; height: 61px;}
+  .copy {word-break: keep-all; overflow-wrap: break-word;}
   .link-box {gap: 20px;}
 }

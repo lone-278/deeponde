@@ -17,8 +17,8 @@
 
 .menu-bg {
   position: fixed; z-index: 100; background-color: rgba(255, 255, 255, 0.5);
-  width: 598px; height: calc(100vh - 90px); padding: 80px 0 0 clamp(100px, 8vw, 160px);; top: 90px;
-  display: none; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  width: 598px; height: calc(100vh - 90px); padding: 80px 0 0 clamp(100px, 8vw, 160px); 
+  top: 90px; display: none; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 .menu-bg a {display: block;}
 .component {display: flex; align-items: center; gap: 10px; margin-bottom: 40px;}
